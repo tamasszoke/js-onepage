@@ -1,8 +1,9 @@
 
 body {
 	padding-top: 20px;
-	background: url('../images/background.jpg');
-	background-size: cover;
+	background: url('../images/background.png');
+	background-size: auto;
+	background-repeat: repeat;
 	color: #fff;
 	text-shadow: 2px 2px 5px #000;
 }
