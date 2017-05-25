@@ -1,0 +1,47 @@
+
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="cover-heading">Usage</h1>
+		<p class="lead">5 simple steps</p><br/>
+		<p>
+			1. Include <code>jsOnePage</code> in your html: <div class="col-md-5"><pre><code class="language-markup">&lt;script src="js/lib/jsOnePage.js">&lt;/script></code></pre></div><br/>
+			2. Create the <code>links</code> in your html: 
+			<div class="col-md-7">
+				<pre><code class="language-markup">&lt;a class="nav-link one-page-link active" href="#/home">Home&lt;/a>
+&lt;a class="nav-link one-page-link" href="#/features">Features&lt;/a>
+&lt;a class="nav-link one-page-link" href="#/usage">Usage&lt;/a></code></pre>
+		<p>
+			- The default classes: one-page-link<br/>
+			- You can specify custom classes too
+		</p>
+			</div><br/>
+			3. Create the <code>container</code> in your html: <div class="col-md-5"><pre><code class="language-markup">&lt;div id="one-page-container" class="container">&lt;/div></code></pre>
+		<p>
+			- The default id: one-page-container<br/>
+			- You can specify custom id too
+		</p>
+			</div><br/>
+			4. Create an <code>instance</code> in your '.js' file: 
+			<div class="col-md-8">
+				<pre><code class="language-javascript">var jso = new jsOnePage({
+	pages: {
+		'home': 'pages/home.html',
+		'features': 'pages/features.html',
+		'usage': 'pages/usage.html'
+	},
+	//container: 'id-of-any-div-tag', // optional, default: "one-page-container"
+	//link_class: 'class-of-the-links', // optional, default: "one-page-link"
+	//page_not_found: 'path/to/404.html' // optional, default is a simple 404 message
+});</code></pre>
+		<p>
+			- The name here and the hash in the href must match (home, home)<br/>
+			- First of these will be the default page when hash not defined
+		</p>
+			</div><br/>
+			5. Listen for <code>hashChange</code> event:
+			<div class="col-md-7"><pre><code class="language-javascript">$(window).on('hashchange', jso.load_page).trigger('hashchange');</code></pre></div>
+		</p>
+	</div>
+</div>
+
+<script>Prism.highlightAll();</script>
