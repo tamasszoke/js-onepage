@@ -10,6 +10,8 @@ Simple script for one-page applications.
 <script src="js/lib/jsOnePage.js"></script>
 ```
 
+<br/>
+
 2. Create the links in your html:
 
 ```html
@@ -21,6 +23,8 @@ Simple script for one-page applications.
 - The default classes: one-page-link
 - You can specify custom classes too
 
+<br/>
+
 3. Create the container in your html:
 
 ```html
@@ -29,6 +33,8 @@ Simple script for one-page applications.
 
 - The default id: one-page-container
 - You can specify custom id too
+
+<br/>
 
 4. Create an instance in your '.js' file:
 
@@ -48,11 +54,14 @@ var jso = new jsOnePage({
 - The name here and the hash in the href must match (home, home)
 - First of these will be the default page when hash not defined
 
+<br/>
+
 5. Listen for hashChange event:
 
 ```javascript
 $(window).on('hashchange', jso.load_page).trigger('hashchange');
 ```
+
 
 ## License
 
