@@ -21,7 +21,7 @@ function jsOnePage(defaults) {
 
 		if (config.pages[page_name] && hash_values.length == 1) {
 
-			$('#' + config.container).load(config.pages[page_name], {param: ''}, function() {
+			$('#' + config.container).load(config.pages[page_name], function() {
 		
 				root.change_link(page_name);
 			});
