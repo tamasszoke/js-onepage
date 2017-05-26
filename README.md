@@ -36,7 +36,7 @@ Simple script for one-page applications.
 
 <br/>
 
-4. Create an instance in your '.js' file:
+4. Create an instance in your .js file:
 
 ```javascript
 var jso = new jsOnePage({
